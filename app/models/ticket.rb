@@ -1,5 +1,4 @@
 class Ticket < ApplicationRecord
-  include ActiveModel::Validations
   ##### Associations #####
   belongs_to :assigned_user, class_name: "User"
 
