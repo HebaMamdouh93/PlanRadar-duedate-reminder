@@ -8,4 +8,7 @@ class User < ApplicationRecord
 
   validates :time_zone, presence: true, inclusion: { in: ActiveSupport::TimeZone.all.map { |tz| tz.name } }
   validates :reminder_time, :reminder_interval, presence: true, if: -> { due_date_reminders_enabled == true }
+
+  ##### Scopes #####
+  scope :due_date_reminders_enabled, -> { where(due_date_reminders_enabled: true) }
 end
