@@ -30,6 +30,7 @@ require 'rspec/rails'
 # recreate the test database by loading the schema.
 # If you are not using ActiveRecord, you can remove these lines.
 require 'support/factory_bot'
+require 'support/shoulda_matchers'
 begin
   ActiveRecord::Migration.maintain_test_schema!
 rescue ActiveRecord::PendingMigrationError => e
