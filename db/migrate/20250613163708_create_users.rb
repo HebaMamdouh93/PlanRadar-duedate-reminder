@@ -3,9 +3,9 @@ class CreateUsers < ActiveRecord::Migration[8.0]
     create_table :users do |t|
       t.string :name
       t.string :email
-      t.boolean :send_due_date_reminder, default: false
-      t.integer :due_date_reminder_interval
-      t.time :due_date_reminder_time
+      t.boolean :due_date_reminders_enabled, default: false
+      t.integer :reminder_interval
+      t.time :reminder_time
       t.string :time_zone
 
       t.timestamps
