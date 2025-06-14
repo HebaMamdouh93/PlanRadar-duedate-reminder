@@ -56,14 +56,12 @@ group :development, :test do
   gem "shoulda-matchers", "~> 6.5.0"
   gem "faker", "~> 3.5.1"
   gem "factory_bot_rails", "~> 6.5.0"
+  gem "byebug"
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-
-  # [https://github.com/deivid-rodriguez/pry-byebug]
-  gem "pry-byebug", "~> 3.11.0"
 end
 
 group :test do
