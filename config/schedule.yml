@@ -1,0 +1,4 @@
+due_date_reminders:
+  cron: "* * * * *"   # every minute
+  class: "DueDateRemindersJob"
+  queue: default

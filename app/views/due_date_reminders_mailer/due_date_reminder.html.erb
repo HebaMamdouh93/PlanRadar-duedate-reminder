@@ -1,0 +1,11 @@
+<p>Hello <%= @user.name %>,</p>
+
+<p>You have the following ticket(s) due:</p>
+
+<ul>
+  <% @tickets.each do |ticket| %>
+    <li><strong><%= ticket.title %></strong> - due on <%= ticket.due_date %></li>
+  <% end %>
+</ul>
+
+<p>Please take action before the due date.</p>
