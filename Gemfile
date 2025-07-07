@@ -40,7 +40,7 @@ gem "thruster", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-gem "sidekiq", "~> 8.0.4"
+gem "sidekiq", "~> 8.0.5"
 gem "sidekiq-cron", "~> 2.3.0"
 
 group :development, :test do
